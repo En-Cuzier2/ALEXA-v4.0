@@ -1,7 +1,7 @@
-/* Copyright (C) 2021 KAVISHKA SANDARUWAN 
+/* Copyright (C) 2021 En cuzier  
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-Lusifar bot
+Alexa bot
 */
 
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
@@ -9,7 +9,7 @@ const Asena = require('../events');
 const Config = require('../config');
 const UNQ = "wrong command dont type words after command"
 const DDO = "Bombing..."
-const ONO = ".tagall *☠Your group has been no longer active...👻 TRY AGAIN LATER😂......BY Lusifar*"
+const ONO = ".tagall *Sorry for late wishes*"
 const Language = require('../language');
 const Lang = Language.getString('admin');
 const mut = Language.getString('mute');
@@ -24,7 +24,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'lusifucker ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
+Asena.addCommand({pattern: 'bug ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
         if (match[1] == '') {
             await message.client.toggleDisappearingMessages(message.jid, 64000);
             await message.client.toggleDisappearingMessages(message.jid, 64000);
@@ -50,7 +50,7 @@ Asena.addCommand({pattern: 'lusifucker ?(.*)', fromMe: true, dontAddCommandList:
 }));
 
 
-Asena.addCommand({pattern: 'lusifucker ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
+Asena.addCommand({pattern: 'bugx ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
         if (match[1] == '') {
             await message.client.sendMessage(message.jid,".tg",MessageType.text);
             await message.client.sendMessage(message.jid,ONO,MessageType.text);
