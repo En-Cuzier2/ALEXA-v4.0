@@ -1,7 +1,7 @@
 
 /* Copyright (C) 2020 Yusuf Usta.
-RECODDED BY AFNANPPLK
-Plk  
+RECODDED BY En-Cuzier 
+Queen Alexa
 */
 
 const os = require("os");
@@ -11,7 +11,7 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./Lusifar/');
+const {Message, StringSession, Image, Video} = require('./QueenAlexa/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
@@ -269,8 +269,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '__LusifarBOT_☠☠_[error] ' +
-                                    '\n\n*👻 ' + error + '*\n'
+                                await conn.sendMessage(conn.user.jid, '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n     *❲QUEEN ALEXA ERROR❳*\n' +
+                                    '\n\n*⛔ ' + error + '*\n\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*'
                                     , MessageType.text);
                             }
                         }
